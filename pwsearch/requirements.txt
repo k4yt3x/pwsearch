@@ -1,0 +1,7 @@
+colorama
+gevent
+grequests
+loguru
+pymediawiki
+requests
+rich
