@@ -4,7 +4,7 @@
 Name: PWSearch
 Author: K4YT3X
 Date Created: June 7, 2021
-Last Modified: Jun 25, 2021
+Last Modified: July 1, 2021
 
 (C) 2021 K4YT3X
 All rights reserved.
@@ -196,7 +196,7 @@ def parse_arguments() -> argparse.Namespace:
         "-f",
         "--format",
         help="logger format string",
-        default="<fg 240>{time:HH:mm:ss.SSSSSS!UTC} | </fg 240><level>{level}</level> - <level>{message}</level>",
+        default="<fg 240>{time:HH:mm:ss.SSSSSS!UTC}</fg 240> | <level>{level: <8}</level> | <level>{message}</level>",
     )
     parser.add_argument("-q", "--quiet", help="hide logger output", action="store_true")
     subparsers = parser.add_subparsers(dest="command", required=True)
